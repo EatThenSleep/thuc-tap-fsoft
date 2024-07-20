@@ -1,0 +1,12 @@
+------------------------------- Front end news -------------------------------
+tính năng 1: chỉ cần double click vào 1 row thì sẽ hiện ra thông tin của carte được chọn
+
+ 
+
+tính năng 2: Khi mà mình có một select option phức tạp, mà nình muốn hiển thị ra thông tin chi tiết của option đó thì mình sẽ làm ra một modal cho
+màn hình tìm kiếm hiển thị thông tin cho option đó
+
+ 
+
+tính năng 3: khi mở nhiều màn hình mở cùng một url, mà màn hình đó có 2 thao tác read and write, thì mình sẽ chỉ cho 1 màn hình read và write,
+còn các màn hình khác chỉ cho read

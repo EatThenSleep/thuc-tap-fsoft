@@ -1,0 +1,1 @@
+Khi nhận một danh sách các ticket thì nên scan các ticker trước khi làm. để xem thằng nào chưa hiểu rõ vấn đề của khách hàng thỉ hỏi lại BA, nếu không tái hiện được bug thì nhờ tester => Làm như vậy sẽ đẩy nhanh tiến độ công việc lên

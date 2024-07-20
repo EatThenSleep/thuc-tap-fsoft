@@ -1,0 +1,32 @@
+1> Nhận ticket từ chị Sub-PM (chị huyền)
+
+2> Đọc Description và test xem có lỗi không (Tester có thể nhầm)
+	-> comment dear tester verify cho thấy self test của mình
+
+------- đọc kĩ chớ lịm :) ----------
+3> Đọc Description, Check SRS, kiểm tra với khác SRS 
+	a) Khác, Comment cho BA (chị bích) và Sub-PM để xem xét và
+	chuyển ticket qua CR 
+	b) Không hiểu, Qua hỏi Team Lead (anh lân)
+		b1) anh lân không rõ hỏi lại BA
+	c) Giống, Thực hiện bước 4
+
+4> Phân tích ticket (chưa code vội được đâu)
+	- B1: Tìm cause root
+	- B2: đưa ra solution
+	- B3: Đánh impact
+	- B4: Đánh giá estimate của mình (cái này ghi kĩ)
+		+ mất bao lâu để tìm ra cause root
+		+ tốn bao nhiêu lâu để tìm ra solution
+		+ tốn bao lâu cho việc code (tự nghĩ đê)
+	- B5: Comment cho Team Lead để xem solution và cause root 
+	mình đã giải quyết ổn thỏa chưa
+	- B6: Nếu Team Lead Ok mới được code, không quay lại bước 1	
+
+5> Bắt đầu code 
+	B1) Code
+	B2) Đã test qua nhiều lần và thấy ăn
+	B3) tự viết self test để giải trình cho tester và dod
+	B4) Tạo Pull Request để merge
+	B5) Comment Cho Team Lead để nhờ Review (nhớ chưa link 	request) (nhớ viết comment cho chuẩn theo link)
+	

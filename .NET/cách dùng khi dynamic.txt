@@ -1,0 +1,2 @@
+Đối với biến dynamic thì khi debug ta thấy nó có giá trị
+nhưng nó không gợi ý là do khi dùng dynamic là để tương tác với các hệ thống khác

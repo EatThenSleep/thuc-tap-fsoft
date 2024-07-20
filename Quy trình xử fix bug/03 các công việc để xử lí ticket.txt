@@ -1,0 +1,84 @@
+----------------------------------------- Các công việc để xử lý một ticket (fix bug) -----------------------------------------
+
+ 
+
+#Khi nhận được bug mình sẽ đánh giá nó sai phần nào, phần nào dùng data chỗ này, tìm cách tái hiện cái bug đó trước rồi đánh giá
+xem nó ở màn hình nào. Nếu trường hợp không tái hiện được bug thì xem thử người assign đó là ai
+  - Nếu là tester thì nhờ tester tái hiện lại bug giúp mình
+  - Nếu là khách hàng thì assign cho tean lead nhờ tester hoặc BA tái hiện lại giúp mình
+Đánh giá: Mình sẽ tìm lỗi nó nằm ở đâu Front End, Back End, Batch
+
+ 
+
+#Nếu là bug thì mình sẽ đặt tên branch là
+  bugfix/<id-ticket>
+
+ 
+
+#Nếu là CR thì đặ tên branch nó là
+  cr/<id-ticket>
+
+ 
+
+#Các viết commit trong dự án
+  [CTNA-<id-ticket>] message conventional
+
+ 
+
+#Khi mà bạn push lên git, thì bạn sẽ tạo MR để merge vào branch của mình, để đảm bảo cái việc từ nhánh feature của bạn merge không 
+bị conflict thì mình sẽ thông qua một bước gọi là rebase
+
+ 
+
+  - Mình sẽ chọn nhánh chính và chọn rebase. Nhánh mà mình đang muốn merge vào thì mình sẽ rebase nhánh đó vào nhánh mình
+  đang làm.
+
+ 
+
+  - Rebase có nghĩa là mình đem hết tất cả các commit của nhánh màn hình chính qua nhánh của mình
+
+ 
+
+  - Ví dụ như trong lúc bạn đang code, có người push code lên nhánh chính của bạn đang làm thì sao?
+    => thì code của bạn khi push lên sẽ bị conflict, để xử lý trường hợp conflict mình sẽ dùng rebase
+    mình sẽ đem những code mới của nhánh chính đem qua nhánh của mình . Để xem nó có bị conflict hay
+    không, nếu có thì mình resolved
+
+ 
+
+# Sau khi xong bước rebase, mình sẽ push lên
+- Bước 1: Click vào nhánh mình muốn push (nhánh mình làm)
+- Bước 2: Chọn push với các option (create tracking references, force push)
+
+ 
+
+# Sau khi push lên mình sẽ tạo merge request
+- Bước 1: Chọn merge request
+- Bước 2: Chọn tên branch của mình và chọn tên branch muốn merge
+- Bước 3: Bấm compare branches and continue
+- Bước 4: Viết message như commit message đã commit trước đó, Chọn assigned cho mình, reviewer là team lead của mình rồi bấm
+Create merge request
+
+ 
+
+# Khi các bạn tạo MR xong sẽ có cái link, copy cái link này qua ticket trên JIRA và viết như sau
+
+ 
+
+Dear anh/chị TeamLead
+
+ 
+
+The root cause of this issue:
+- Liệt kê ra
+...
+
+ 
+
+I have created this [MR| link MR] for handling this issue
+Action tiếp theo nhờ TeamLead làm gì đó --> Ví dụ: Please kindly help me process it
+Best Regards
+
+ 
+
+Sau khi add comment lại thì assign lại ticket trên JIRA là người bạn dear comment

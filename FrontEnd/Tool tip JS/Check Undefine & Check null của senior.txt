@@ -1,0 +1,15 @@
+!! variable : boolean
+
+Nếu variable == null hoặc variable == undefine thì trả về falase
+ngược lại sẽ ra true
+
+Ví dụ: 
+
+!!null
+false
+----------------------
+!!undefined
+false
+----------------------
+!!"a"
+true

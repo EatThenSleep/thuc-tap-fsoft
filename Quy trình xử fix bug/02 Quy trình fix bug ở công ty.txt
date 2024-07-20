@@ -1,0 +1,20 @@
+----------------------------------------- Quy trình fix bug ở công ty -----------------------------------------
+
+ 
+
+Dev fix bug --> đưa team lead review --> pass --> m
+erge code --> deloy lên môi trường test --> Tester test
+--> pass --> đưa lên môi trường staging --> BA hoặc Onsite check (khách hàng có thể test trên môi trường staging)
+--> Pass --> Deloy lên production (trước khi deloy phải có từng mốc: nào là thông báo với khách hàng, rất nhiều process để chuẩn bị deloy lên production)
+
+ 
+
+**Chú ý: Khúc nào fail thì sẽ quay ngược lại DEV
+
+ 
+
+Để được tới tay khách hàng, chúng ta phải đi qua 2 cái filter là qua tester và BA
+
+ 
+
+***Lưu ý quan trong: Trước thứ tư nếu như không làm xong thì phải nhờ anh chị dời deadline hoặc help chứ không được ôm bom

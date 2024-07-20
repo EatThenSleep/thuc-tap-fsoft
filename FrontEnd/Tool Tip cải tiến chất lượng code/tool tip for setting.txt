@@ -1,0 +1,3 @@
+Nên lưu tất cả setting cần thiết ở backend (setting lưu ở database), khi người ta vào web app của mình để vào (lần đầu) thì mình sẽ gọi api để lấy setting bên backend cung cấp để dùng cho các service cần thiết dùng nó trong front end
+
+Data sẽ được lưu trong localstorage của redux state

@@ -1,0 +1,3 @@
+- cách 1: Cách đơn giản là trả về code cũ và push thêm 1 commit nữa
+- cách 2: Nếu tạo MR vào 1 nhánh nào đó thì trên git sẽ có tùy chọn revert
+- cách 3: dùng tool

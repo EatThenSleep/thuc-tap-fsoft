@@ -1,0 +1,9 @@
+var languageOther = setting == null
+    ? string.Empty
+    : string.Format("{0}/{1}", setting.SettingNameEng, setting.SettingNameJpn);
+
+ 
+
+- thay vì dùng "", ta dùng string.Empty nó sẽ  tối ưu performance hơn
+- thay vì dùng biểu thức chính quy, ta dùng string.Format sẽ tối ưu performance hơn
+

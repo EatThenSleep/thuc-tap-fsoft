@@ -1,0 +1,6 @@
+MediatR
+EF Core
+AutoMapper
+Fluent Validation
+NUnit, Fluent Assertions, Moq & Respawn
+Npgsql PostgreSQL

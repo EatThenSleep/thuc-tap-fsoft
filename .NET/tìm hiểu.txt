@@ -1,0 +1,10 @@
+------------------------------- .NET -------------------------------
+Các bạn có thể về tìm hiểu thử RabbitMQ
+
+ 
+
+Project Common dùng cho các hàm xử lí chung
+
+ 
+
+Tìm hiểu HangFire trong .NET
