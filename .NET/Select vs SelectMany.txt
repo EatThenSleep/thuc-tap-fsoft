@@ -1,0 +1,11 @@
+    var schools = new[] {
+   	 new School(){ Students = new [] { new Student(){ Name="Bob"}, new Student(){ Name="Jack"} }},
+   	 new School(){ Students = new [] { new Student(){ Name="Jim"}, new Student(){ Name="John"} }}
+    };
+	
+	// IEnumrable<Students[]>
+	var allStudents = schools.Select(s => s.Students); => này sẽ gọi ra 2 kết quả, trong 2 kết quả đó sẽ chứa
+							      thêm 2 thằng kết quả khác nữa	
+	
+	// IEnumrable<Students?>
+	var allStudents2 = schools.SelectMany(s => s.Students); => chỉ có 4 thằng

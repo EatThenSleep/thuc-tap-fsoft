@@ -1,3 +1,5 @@
+#Mẹo 1
+
 var languageOther = setting == null
     ? string.Empty
     : string.Format("{0}/{1}", setting.SettingNameEng, setting.SettingNameJpn);
@@ -7,3 +9,7 @@ var languageOther = setting == null
 - thay vì dùng "", ta dùng string.Empty nó sẽ  tối ưu performance hơn
 - thay vì dùng biểu thức chính quy, ta dùng string.Format sẽ tối ưu performance hơn
 
+#Mẹo 2
+Nếu là Null thì Empty
+
+	var oldAdmKey = int.AdmKey.NullToEmpty()

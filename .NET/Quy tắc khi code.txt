@@ -1,0 +1,4 @@
+1) Không được dùng gọi Select đến Database trong for,
+	Không được gọi Select đến Database trong Select
+
+--> Vì bản chất Select là loop
