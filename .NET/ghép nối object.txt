@@ -1,0 +1,34 @@
+concat
+
+char[] sequence1 = {'p', 'q', 'r', 's', 'y', 'z'}; 
+char[] sequence2 = {'p', 'm', 'o', 'e', 'c', 'z'};
+
+var result = sequence1.Concat(sequence2); 
+
+Sequence 1 is: 
+p
+q
+r
+s
+y
+z
+Sequence 2 is: 
+p
+m
+o
+e
+c
+z
+New Sequence:
+p
+q
+r
+s
+y
+z
+p
+m
+o
+e
+c
+z

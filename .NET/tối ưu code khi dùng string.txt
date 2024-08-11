@@ -13,3 +13,14 @@ var languageOther = setting == null
 Nếu là Null thì Empty
 
 	var oldAdmKey = int.AdmKey.NullToEmpty()
+
+# Mẹo 3
+
+Trả về boolean, check null hoặc empty
+ops.isNullOrEmpty() =? trả về kiểu boolean
+
+# Mẹo 4
+
+Set Null nếu là Null hoặc Empty
+
+ops.SetNullIfNullOrEmpty() => trả về null hoặc empty thì  set là null
