@@ -1,0 +1,17 @@
+# Nếu fix bằng nhiều commit thì sẽ merge các commit đó lại một commit
+Cách gộp nhiều commit lại thành một commit
+
+ 
+
+  ## Ở dưới local
+    vào trong fork, tìm về parent của commit của mình muốn gộp
+    mình nhấn "reset to here" chọn mixed, để đưa các file về chỗ cũ, lúc đó ở trong stage
+    các file mình commit sẽ quay lại,
+    thì bây giờ các commit trước đó đã bị xóa.
+    Rồi chúng ta chỉ cần push lên thôi (option như phần mềm fork chọn)
+
+ 
+
+  ## Ở trên remote
+    Làm tương tự như ở trên
+    Khi push lên thì sẽ chọn force push

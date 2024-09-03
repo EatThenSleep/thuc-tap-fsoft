@@ -1,0 +1,5 @@
+# Cherry-Pick hiểu đơn giản là đem một cái commit nào đó vào cái nhánh của mình (thường được dùng để đưa code lên staging)
+  - checkout cái nhánh mình muốn làm
+  - search cái id commit trên thanh tìm kiếm
+  - chuột phải vào chọn cherry-pick
+  - push lên
