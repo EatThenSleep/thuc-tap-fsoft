@@ -27,4 +27,9 @@ public static class TimeExtension
     {
         return timeSpan?.ToString(format);
     }
+
+    public static TimeSpan? Subtract(this TimeSpan? originalTime, int minutesToSubtract)
+    {
+        return originalTime?.Subtract(TimeSpan.FromMinutes(minutesToSubtract));
+    }
 }
