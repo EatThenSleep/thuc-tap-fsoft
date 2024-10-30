@@ -9,3 +9,17 @@
 	
 	// IEnumrable<Students?>
 	var allStudents2 = schools.SelectMany(s => s.Students); => chỉ có 4 thằng
+
+
+Trường hợp dùng: tối ưu thêm phần tử
+
+var mstKeys = guideQuery.SelectMany(item => new[]
+				 {
+					item.ContentKey1,
+					item.ContentKey3
+				 }	
+			.Where(item => item.isNullOrEmpty() == false)
+			.Distinct()
+			.ToList();
+						
+

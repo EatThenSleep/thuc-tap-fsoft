@@ -1,0 +1,1 @@
+https://stackoverflow.com/questions/1745691/linq-when-to-use-singleordefault-vs-firstordefault-with-filtering-criteria#:~:text=FirstOrDefault%20returns%20a%20first%20item,contract%2C%20an%20exception%20is%20thrown.

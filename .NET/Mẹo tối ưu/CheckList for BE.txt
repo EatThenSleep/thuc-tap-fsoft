@@ -1,0 +1,16 @@
+1. Đối với API auto complete textbox, dropdown trên 100 items => BE
+apply paging and search với pageSize = 50(default) => FE apply lazyload
+
+2. Các StoreProcedure là giảm performance => chuyển DapperService sang Linq
+
+3. Không CreateOrUpdate cho từng item trong vòng lặp thay vào đó add vào list và BatchCreate hoặc BatchUpdate sau vòng lặp.
+
+4. Nên sử dụng no-tracking queries khi lấy ra chỉ với mục đích read-only
+
+5. Kiểm tra list có phần tử rỗng cho list lớn có vài trăm phần từ
+=> Dùng Linq.Any() thay co Count()
+	- Vì phương thức Count() sẽ duyệt qua toàn bộ các phần tử 
+	của List<T> và trả về tổng số phần tử. Trong khi đó phương
+	thức Any() sẽ trả về boolean và nó sẽ trả về kết quả ngay
+	khi gặp phần tử đầu tiên thỏa mản điều kiện khi duyệt qua
+	các phần tử của List<T>

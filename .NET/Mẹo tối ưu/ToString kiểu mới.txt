@@ -1,0 +1,8 @@
+Thay vì viết kiểu như này
+	d.LastWriteTime.ToString("MM/dd/yy")
+
+Ta có thể thay thế bằng
+	d.LastWriteTime:MM/dd/yy
+
+Format số theo string có dấu ,
+	f.Length:#,####
