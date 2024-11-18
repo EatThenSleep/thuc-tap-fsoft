@@ -1,0 +1,11 @@
+1. Ép kiểu bình thường
+	var a = (Human)man;
+
+Nếu chúng ta dùng ép kiểu này thì phải chắc chắn là biến man
+có kiểu là Human, còn nếu không thì nó sẽ bị bắn ra exception
+
+2. Ép kiểu dùng từ khóa as
+	var a = mas as Human
+
+Dùng kiểu này thì dù cho biến man không phải là kiểu Human
+thì kết quả nó trả ra null mà không bị văng exception
